@@ -1,6 +1,6 @@
 #! /bin/bash
 
-unzip -d /opt stm32cube_fw_f1_v140.zip
+unzip -d /opt STM32Cube_FW_F1_V1.4.0.zip
 cd /opt/
 git clone https://github.com/g4klx/MMDVM.git
 apt-get install -y gcc-arm-none-eabi
