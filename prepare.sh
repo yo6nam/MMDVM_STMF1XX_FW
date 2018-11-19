@@ -3,7 +3,6 @@
 unzip -d /opt STM32Cube_FW_F1_V1.4.0.zip
 cd /opt/
 git clone https://github.com/g4klx/MMDVM.git
-apt-get install -y gcc-arm-none-eabi
 apt-get install -y binutils-arm-none-eabi
 apt-get install -y libusb-1.0
 apt-get install -y libnewlib-arm-none-eabi
