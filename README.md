@@ -1,5 +1,6 @@
 # MMDVM_STMF1XX_FW
 Files and scripts required to build MMDVM firmware for STM32F1XX devices
+
 Please clone this in /opt
 
 1. You need to execute in sequence : prepare.sh -> build.sh
