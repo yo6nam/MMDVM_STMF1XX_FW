@@ -5,6 +5,7 @@ echo "Upgrading firmware for STM32F1XX"
 if [ ! -r "/opt/mmdvm.hex" ]; then
 	echo "There is no firmware file available to use. Make sure to build it using the build.sh"
 else
+	/usr/bin/sudo systemctl disable mmdvmhost.service && systemctl stop mmdvmhost.service
 	while true; do
                 read -p "Is your board modded [GPIO pins to BOOT]? (Yes/No)" yn
                 case $yn in
@@ -14,5 +15,5 @@ else
                 esac
 	done
 fi
-
+/usr/bin/sudo systemctl enable mmdvmhost.service && systemctl start mmdvmhost.service
 read -p "Press any key to continue"
