@@ -72,8 +72,8 @@
 // To reduce CPU load, you can remove the DC blocker by commenting out the next line
 // #define USE_DCBLOCKER
 
-// Constant Service LED once repeater is running 
-// Do not use if employing an external hardware watchdog 
+// Constant Service LED once repeater is running
+// Do not use if employing an external hardware watchdog
 #define CONSTANT_SRV_LED
 
 // Use the YSF and P25 LEDs for NXDN
@@ -82,5 +82,7 @@
 // Use the D-Star and DMR LEDs for POCSAG
 // #define USE_ALTERNATE_POCSAG_LEDS
 
-#endif
+// Use the D-Star and YSF LEDs for FM
+#define USE_ALTERNATE_FM_LEDS
 
+#endif
